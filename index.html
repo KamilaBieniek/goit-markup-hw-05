@@ -17,7 +17,7 @@
             <nav class="nav">
                 <a class="logo-header link" href="/">Web<span class="span">Studio</span></a>
                 <ul class="navigation-list list">
-                    <li class="li-navigation"><a href="./index.html" class="navigation link">Studio</a></li>
+                    <li class="li-navigation li-navigation--current"><a href="./index.html" class="navigation link">Studio</a></li>
                     <li class="li-navigation"><a href="./portfolio.html" class="navigation link">Portfolio</a></li>
                     <li class="li-navigation"><a href="" class="navigation link">Contacts</a></li>
                 </ul>
@@ -34,7 +34,7 @@
         <section class="catchphrase">
             <div class="container">
                 <h1 class="title">Effective Solutions for Your Business</h1>
-                <button type="button" class="order-button">Order Service</button>
+                <button data-modal-open type="button" class="order-button">Order Service</button>
             </div>    
         </section>
         <section class="values">
@@ -352,5 +352,11 @@
             </div>
         </div>  
     </footer>
+    <aside data-modal class="modal-window is-hidden">
+        <section class="modal-body">
+            <button data-modal-close type="button" class="close-button">x</button>
+        </section>
+    </aside>
+    <script src="./modal.js"></script>
 </body>
 </html>

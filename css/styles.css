@@ -16,7 +16,14 @@ body { font-family: "Roboto", sans-serif; color: #434455; background-color: #FFF
 .navigation {color: #2E2F42; font-size: 16px; font-weight: 500; line-height: 1.5; letter-spacing: 0.02em;
     padding: 24px 0;}
 .navigation-list {display: flex; gap: 40px;}
-.li-navigation {display: flex; justify-content: center;}
+.li-navigation {display: inline-flex; justify-content: center; flex-direction: column;}
+.li-navigation--current::after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: #404BBF;
+    border-radius: 2px;
+}
 .navigation:hover,
 .navigation:focus {color: #404bbf;}
 .address {
@@ -35,8 +42,22 @@ body { font-family: "Roboto", sans-serif; color: #434455; background-color: #FFF
     padding: 188px 0;}
 .title {color: #FFFFFF;font-size: 56px; font-weight: 700; line-height: 1.07; letter-spacing: 0.02em; text-align: center;
     max-width: 496px; margin: auto;}
-.order-button {color:#FFFFFF; background-color: #4D5AE5; font-family: "Roboto", sans-serif; font-weight: 500; font-size: 16px; line-height: 1.5; letter-spacing: 0.04em; cursor: pointer;
-    display: block; min-width: 169px; height: 56px; border: none; border-radius: 4px; margin: 0 auto; margin-top: 48px;}
+.order-button {
+    color:#FFFFFF; 
+    background-color: #4D5AE5; 
+    font-family: "Roboto", sans-serif; 
+    font-weight: 500; 
+    font-size: 16px; 
+    line-height: 1.5; 
+    letter-spacing: 0.04em; 
+    cursor: pointer;
+    display: block; 
+    min-width: 169px; 
+    height: 56px; 
+    border: none; 
+    border-radius: 4px; 
+    margin: 0 auto; 
+    margin-top: 48px;}
 .order-button:hover,
 .order-button:focus {background-color: #404BBF; cursor: pointer;}
 .title {font-weight: 500;}
@@ -123,3 +144,59 @@ body { font-family: "Roboto", sans-serif; color: #434455; background-color: #FFF
 .app-link {display: block;}
 .app-link:hover,
 .app-link:focus {box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);}
+.portfolio-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+.fig-text {
+    color: #F4F4FD;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 40px 32px 0;
+}
+.portfolio-wrapper figcaption {
+    position: absolute;
+    inset: 0;
+    background-color: #4D5AE5;
+    translate: 0 100%;
+}
+.li-app:hover figcaption {
+    translate: 0;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-window {position: fixed;
+inset: 0 0 auto;
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+opacity: 1;
+pointer-events: all;
+opacity: 1;
+pointer-events: all;
+}
+.modal-window.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal-body {
+    background-color: #FCFCFC;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.20); 
+    border-radius: 4px
+}
+.close-button {
+    width: 24px;
+    height: 24px;
+    color: #2E2F42;
+    font-size: 16px;
+    background-color: #E7E9FC;
+    border: 1px rgba(0, 0, 0, 0.10);
+    border-radius: 50%;
+    margin-top: 24px;
+    margin-left: 360px; 
+}

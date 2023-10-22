@@ -220,7 +220,7 @@ body { font-family: "Roboto", sans-serif; color: #434455; background-color: #FFF
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition-property: opacity;
+    transition-property: opacity, visibility;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -268,5 +268,5 @@ border: none;}
 }
 .close-icon:hover,
 .close-icon:focus {
-    fill: #ffffff
+    fill: #ffffff;
 }

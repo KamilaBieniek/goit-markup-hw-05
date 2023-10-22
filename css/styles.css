@@ -268,5 +268,5 @@ border: none;}
 }
 .close-icon:hover,
 .close-icon:focus {
-    fill: #ffffff;
+    transition-property: fill #ffffff;
 }

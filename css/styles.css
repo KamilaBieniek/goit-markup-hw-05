@@ -175,7 +175,11 @@ body { font-family: "Roboto", sans-serif; color: #434455; background-color: #FFF
 .customer-link {width: 100%; height: 100%; border: 1px solid #8e8f99; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #8e8f99;
     transition-property: border-color;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .customer-link:hover,
 .customer-link:focus {color: #404bbf;border-color: #404bbf;}
 .customer-icon {fill: currentColor}
@@ -206,7 +210,7 @@ body { font-family: "Roboto", sans-serif; color: #434455; background-color: #FFF
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.li-app:hover figcaption {
+.app-link:hover p {
     transform: translateY(0%);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -254,7 +258,7 @@ body { font-family: "Roboto", sans-serif; color: #434455; background-color: #FFF
     color: #2E2F42;
     font-size: 16px;
     background-color: #E7E9FC;
-    border: 1px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     top: 24px;
     right: 24px;

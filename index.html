@@ -17,7 +17,7 @@
             <nav class="nav">
                 <a class="logo-header link" href="/">Web<span class="span">Studio</span></a>
                 <ul class="navigation-list list">
-                    <li class="li-navigation li-navigation--current"><a href="./index.html" class="navigation link">Studio</a></li>
+                    <li class="li-navigation"><a href="./index.html" class="navigation link link--current">Studio</a></li>
                     <li class="li-navigation"><a href="./portfolio.html" class="navigation link">Portfolio</a></li>
                     <li class="li-navigation"><a href="" class="navigation link">Contacts</a></li>
                 </ul>
@@ -352,11 +352,15 @@
             </div>
         </div>  
     </footer>
-    <aside data-modal class="modal-window is-hidden">
-        <section class="modal-body">
-            <button data-modal-close type="button" class="close-button">x</button>
-        </section>
-    </aside>
+    <div data-modal class="modal-window is-hidden container">
+        <div class="modal-body">
+            <button data-modal-close type="button" class="close-button">
+                <svg class="close-icon" width="8" height="8">
+                    <use href="../images/close.svg#icon-close-black-18dp-2-1"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
     <script src="./modal.js"></script>
 </body>
 </html>
